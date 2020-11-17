@@ -4,15 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/backsground"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal = "true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="-137dp">
+
+        <ImageView
+            android:id="@+id/iv_card_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/carback" />
+
+        <ImageView
+            android:id="@+id/iv_card_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/carback" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/white"
+        android:text="Deal"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/tv_score_left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="32sp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_score_right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="32sp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
