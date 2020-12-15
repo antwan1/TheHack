@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MainGameApp</string>
+    <string name="Todo">TODO</string>
+    <string name="TOdo">Todo2</string>
+    <string name="Todo2">Todo2</string>
+    <string name="androidTextDeal">Deal</string>
+    <string name="buttonPressText">Dealing. . .</string>
+    <string name="fiveofclubs">fiveOfClubs</string>
 </resources>

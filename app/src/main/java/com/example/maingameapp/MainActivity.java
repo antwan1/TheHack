@@ -14,21 +14,19 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     ImageView iv_card_left, iv_card_right;
     TextView tv_score_left, tv_score_right;
-    Button Button5;
+    Button dealButton;
     Random r;
     int leftScore = 0, rightScore = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        iv_card_left = (ImageView) findViewById(R.id.iv_card_left);
-        iv_card_right = (ImageView) findViewById(R.id.iv_card_right);
-        tv_score_left = (TextView) findViewById(R.id.tv_score_left);
-        tv_score_right = (TextView) findViewById(R.id.tv_score_right);
-        Button5 = (Button) findViewById(R.id.Button5);
+
+        dealButton = (Button) findViewById(R.id.DealButton);
+       //this r is used to make a random number generator....hmmmmm.
         r= new Random();
 
-        Button5.setOnClickListener(new View.OnClickListener() {
+        dealButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //generate two card numbers
