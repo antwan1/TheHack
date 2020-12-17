@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_uptable__1_"
+    tools:context=".Game">
+
+    <ImageButton
+        android:id="@+id/four_of_hearts"
+        android:layout_width="52dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:background="@android:color/transparent"
+        android:rotation="-90"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/menuButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ten_of_diamonds"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@drawable/four_of_hearts"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/j_of_hearts"
+        android:layout_width="52dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="224dp"
+        android:background="@android:color/transparent"
+        android:rotation="-90"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/j_of_hearts" />
+
+    <ImageButton
+        android:id="@+id/ten_of_diamonds"
+        android:layout_width="52dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:rotation="-90"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/j_of_hearts"
+        app:srcCompat="@drawable/ace_of_clubs" />
+
+    <ImageButton
+        android:id="@+id/J_of_clubs"
+        android:layout_width="52dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="224dp"
+        android:background="@android:color/transparent"
+        android:rotation="-90"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toEndOf="@+id/j_of_hearts"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/j_of_clubs" />
+
+    <ImageButton
+        android:id="@+id/nine_of_spade"
+        android:layout_width="52dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:rotation="-90"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toEndOf="@+id/ten_of_diamonds"
+        app:layout_constraintTop_toBottomOf="@+id/J_of_clubs"
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@drawable/nine_of_spade" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="goToMenu"
+        android:text="@string/menu"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:rotation="90"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
