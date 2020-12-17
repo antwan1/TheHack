@@ -4,84 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backsground"
-    android:padding="20dp"
-    tools:context=".MainActivity"
-    tools:visibility="visible">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal = "true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="-137dp">
-
-        <ImageView
-            android:id="@+id/iv_card_left"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:scaleType="centerInside"
-            android:src="@drawable/carback" />
-
-        <ImageView
-            android:id="@+id/iv_card_right"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:scaleType="centerInside"
-            android:src="@drawable/carback" />
-
-    </LinearLayout>
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/Button5"
+        android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:background="@android:color/white"
-        android:text="Deal"
-        android:textColor="#FFFFFF"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="152dp"
+        android:onClick="playGame"
+        android:text="@string/play_game"
+        android:textSize="24sp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="loginPage"
+        android:text="Login"
+        android:textSize="18sp"
+        app:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-
+    <Button
+        android:id="@+id/settingPage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-        <TextView
-            android:id="@+id/tv_score_left"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textSize="32sp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:layout_height="wrap_content"
-            android:gravity="center"/>
-        <TextView
-            android:id="@+id/tv_score_right"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textSize="32sp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:layout_height="wrap_content"
-            android:gravity="center"/>
-
-
-    </LinearLayout>
-
-
+        android:layout_marginTop="80dp"
+        android:onClick="settingPage"
+        android:text="Setting"
+        android:textSize="18sp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
